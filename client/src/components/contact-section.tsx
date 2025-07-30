@@ -8,26 +8,26 @@ export default function ContactSection() {
       icon: <Mail className="text-indigo-400 text-xl" />,
       title: "Email",
       value: "mohammadalam62819@gmail.com",
-      bgColor: "bg-indigo-500/20"
+      bgColor: "bg-indigo-500/20",
     },
     {
       icon: <Phone className="text-violet-400 text-xl" />,
-      title: "Phone", 
+      title: "Phone",
       value: "+91 6281982193",
-      bgColor: "bg-violet-500/20"
+      bgColor: "bg-violet-500/20",
     },
     {
       icon: <MapPin className="text-blue-400 text-xl" />,
       title: "Location",
-      value: "Bengaluru, India", 
-      bgColor: "bg-blue-500/20"
+      value: "Bengaluru, India",
+      bgColor: "bg-blue-500/20",
     },
     {
       icon: <Github className="text-green-400 text-xl" />,
       title: "GitHub",
       value: "mohammad-aslam",
-      bgColor: "bg-green-500/20"
-    }
+      bgColor: "bg-green-500/20",
+    },
   ];
 
   return (
@@ -38,25 +38,27 @@ export default function ContactSection() {
             Get In Touch
           </span>
         </h2>
-        
+
         <Card className="bg-slate-850 border-slate-700">
           <CardContent className="p-8">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-semibold mb-4">Let's Connect</h3>
               <p className="text-slate-400 max-w-2xl mx-auto">
-                I'm always open to discussing new opportunities, interesting projects, or just having a chat about 
-                technology and data.
+                I'm always open to discussing new opportunities, interesting
+                projects, or just having a chat about technology and data.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               {contactMethods.map((method, index) => (
-                <Card 
+                <Card
                   key={index}
                   className="bg-slate-800 border-slate-700 hover:bg-slate-750 transition-colors"
                 >
                   <CardContent className="p-6 text-center">
-                    <div className={`inline-flex items-center justify-center w-12 h-12 ${method.bgColor} rounded-full mb-4`}>
+                    <div
+                      className={`inline-flex items-center justify-center w-12 h-12 ${method.bgColor} rounded-full mb-4`}
+                    >
                       {method.icon}
                     </div>
                     <h4 className="font-semibold mb-2">{method.title}</h4>
@@ -65,9 +67,9 @@ export default function ContactSection() {
                 </Card>
               ))}
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
+              <a
                 href="mailto:mohammadalam62819@gmail.com?subject=Portfolio Contact&body=Hi Peddinti Mohammad,%0D%0A%0D%0AI found your portfolio and would like to get in touch regarding..."
                 className="inline-block"
               >
@@ -76,13 +78,13 @@ export default function ContactSection() {
                   Send Email
                 </Button>
               </a>
-              <a 
-                href="https://linkedin.com/in/mohammad-aslam"
+              <a
+                href="www.linkedin.com/in/peddinti-mohammad-571315259"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
               >
-                <Button 
+                <Button
                   variant="outline"
                   className="border-indigo-500 text-indigo-400 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-500 hover:text-white transition-all"
                 >
@@ -90,13 +92,13 @@ export default function ContactSection() {
                   LinkedIn
                 </Button>
               </a>
-              <a 
+              <a
                 href="https://github.com/mohammad-aslam"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
               >
-                <Button 
+                <Button
                   variant="outline"
                   className="border-slate-600 text-slate-400 px-8 py-3 rounded-lg font-semibold hover:bg-slate-600 hover:text-white transition-all"
                 >
