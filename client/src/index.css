@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(222, 84%, 5%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(222, 84%, 5%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 8%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32%, 17%);
+  --input: hsl(217, 32%, 17%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(222, 47%, 11%);
+  --secondary: hsl(217, 32%, 17%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(217, 32%, 17%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(217, 91%, 60%);
+  --radius: 0.75rem;
+  
+  /* Custom portfolio colors */
+  --slate-850: hsl(215, 25%, 17%);
+  --slate-950: hsl(222, 84%, 5%);
+  --indigo-400: hsl(234, 89%, 74%);
+  --indigo-500: hsl(231, 76%, 60%);
+  --violet-400: hsl(263, 70%, 70%);
+  --violet-500: hsl(258, 90%, 66%);
+  --blue-400: hsl(213, 94%, 68%);
+  --blue-500: hsl(217, 91%, 60%);
+}
+
+.dark {
+  --background: hsl(222, 84%, 5%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(222, 84%, 5%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 8%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32%, 17%);
+  --input: hsl(217, 32%, 17%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(222, 47%, 11%);
+  --secondary: hsl(217, 32%, 17%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(217, 32%, 17%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(217, 91%, 60%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .slate-850 {
+    background-color: var(--slate-850);
+  }
+  
+  .slate-950 {
+    background-color: var(--slate-950);
+  }
+  
+  .text-slate-300 {
+    color: hsl(212, 17%, 75%);
+  }
+  
+  .text-slate-400 {
+    color: hsl(215, 14%, 62%);
+  }
+  
+  .text-slate-500 {
+    color: hsl(215, 14%, 51%);
+  }
+  
+  .bg-slate-700 {
+    background-color: hsl(215, 25%, 27%);
+  }
+  
+  .bg-slate-800 {
+    background-color: hsl(215, 28%, 17%);
+  }
+  
+  .bg-slate-850 {
+    background-color: var(--slate-850);
+  }
+  
+  .bg-slate-900 {
+    background-color: hsl(220, 13%, 9%);
+  }
+  
+  .bg-slate-950 {
+    background-color: var(--slate-950);
+  }
+  
+  .border-slate-700 {
+    border-color: hsl(215, 25%, 27%);
+  }
+  
+  .border-slate-800 {
+    border-color: hsl(215, 28%, 17%);
+  }
+  
+  .text-indigo-400 {
+    color: var(--indigo-400);
+  }
+  
+  .text-indigo-500 {
+    color: var(--indigo-500);
+  }
+  
+  .text-violet-400 {
+    color: var(--violet-400);
+  }
+  
+  .text-violet-500 {
+    color: var(--violet-500);
+  }
+  
+  .text-blue-400 {
+    color: var(--blue-400);
+  }
+  
+  .bg-indigo-500 {
+    background-color: var(--indigo-500);
+  }
+  
+  .bg-violet-500 {
+    background-color: var(--violet-500);
+  }
+  
+  .bg-gradient-to-r {
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+  
+  .from-indigo-500 {
+    --tw-gradient-from: var(--indigo-500);
+    --tw-gradient-to: rgb(99 102 241 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  
+  .to-violet-500 {
+    --tw-gradient-to: var(--violet-500);
+  }
+  
+  .via-violet-500 {
+    --tw-gradient-to: rgb(139 92 246 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--violet-500), var(--tw-gradient-to);
+  }
+  
+  .to-blue-500 {
+    --tw-gradient-to: var(--blue-500);
+  }
+  
+  .bg-clip-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .text-transparent {
+    color: transparent;
+  }
+  
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+  }
+  
+  .shadow-indigo-500\/10 {
+    box-shadow: 0 10px 15px -3px rgb(99 102 241 / 0.1), 0 4px 6px -2px rgb(99 102 241 / 0.1);
+  }
+  
+  .shadow-indigo-500\/20 {
+    box-shadow: 0 10px 15px -3px rgb(99 102 241 / 0.2), 0 4px 6px -2px rgb(99 102 241 / 0.2);
+  }
+  
+  .shadow-indigo-500\/25 {
+    box-shadow: 0 10px 15px -3px rgb(99 102 241 / 0.25), 0 4px 6px -2px rgb(99 102 241 / 0.25);
+  }
+}
