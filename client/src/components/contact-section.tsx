@@ -67,24 +67,43 @@ export default function ContactSection() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-to-r from-indigo-500 to-violet-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-indigo-600 hover:to-violet-600 transition-all transform hover:scale-105 shadow-lg shadow-indigo-500/25">
-                <Mail className="w-4 h-4 mr-2" />
-                Send Email
-              </Button>
-              <Button 
-                variant="outline"
-                className="border-indigo-500 text-indigo-400 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-500 hover:text-white transition-all"
+              <a 
+                href="mailto:mohammadalam62819@gmail.com?subject=Portfolio Contact&body=Hi Peddinti Mohammad,%0D%0A%0D%0AI found your portfolio and would like to get in touch regarding..."
+                className="inline-block"
               >
-                <Linkedin className="w-4 h-4 mr-2" />
-                LinkedIn
-              </Button>
-              <Button 
-                variant="outline"
-                className="border-slate-600 text-slate-400 px-8 py-3 rounded-lg font-semibold hover:bg-slate-600 hover:text-white transition-all"
+                <Button className="bg-gradient-to-r from-indigo-500 to-violet-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-indigo-600 hover:to-violet-600 transition-all transform hover:scale-105 shadow-lg shadow-indigo-500/25">
+                  <Mail className="w-4 h-4 mr-2" />
+                  Send Email
+                </Button>
+              </a>
+              <a 
+                href="https://linkedin.com/in/mohammad-aslam"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
               >
-                <Github className="w-4 h-4 mr-2" />
-                GitHub
-              </Button>
+                <Button 
+                  variant="outline"
+                  className="border-indigo-500 text-indigo-400 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-500 hover:text-white transition-all"
+                >
+                  <Linkedin className="w-4 h-4 mr-2" />
+                  LinkedIn
+                </Button>
+              </a>
+              <a 
+                href="https://github.com/mohammad-aslam"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button 
+                  variant="outline"
+                  className="border-slate-600 text-slate-400 px-8 py-3 rounded-lg font-semibold hover:bg-slate-600 hover:text-white transition-all"
+                >
+                  <Github className="w-4 h-4 mr-2" />
+                  GitHub
+                </Button>
+              </a>
             </div>
           </CardContent>
         </Card>
