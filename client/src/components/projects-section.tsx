@@ -61,10 +61,14 @@ export default function ProjectsSection() {
                 </div>
                 <div className="flex gap-3">
                   <a 
-                    href="https://github.com/peddinti-mohammad" 
+                    href="https://github.com/mohammad-aslam" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors text-sm"
+                    className="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors text-sm cursor-pointer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open('https://github.com/mohammad-aslam', '_blank', 'noopener,noreferrer');
+                    }}
                   >
                     <Github className="w-4 h-4 mr-1" /> Code
                   </a>

@@ -25,7 +25,7 @@ export default function ContactSection() {
     {
       icon: <Github className="text-green-400 text-xl" />,
       title: "GitHub",
-      value: "peddinti-mohammad",
+      value: "mohammad-aslam",
       bgColor: "bg-green-500/20",
     },
   ];
@@ -93,10 +93,14 @@ export default function ContactSection() {
                 </Button>
               </a>
               <a
-                href="https://github.com/peddinti-mohammad"
+                href="https://github.com/mohammad-aslam"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block"
+                className="inline-block cursor-pointer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open('https://github.com/mohammad-aslam', '_blank', 'noopener,noreferrer');
+                }}
               >
                 <Button
                   variant="outline"

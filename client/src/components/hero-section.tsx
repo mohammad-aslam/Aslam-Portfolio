@@ -66,11 +66,15 @@ export default function HeroSection() {
             <Linkedin className="w-6 h-6" />
           </a>
           <a 
-            href="https://github.com/peddinti-mohammad" 
+            href="https://github.com/mohammad-aslam" 
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-400 hover:text-indigo-400 transition-colors"
+            className="text-slate-400 hover:text-indigo-400 transition-colors cursor-pointer"
             aria-label="GitHub Profile"
+            onClick={(e) => {
+              e.preventDefault();
+              window.open('https://github.com/mohammad-aslam', '_blank', 'noopener,noreferrer');
+            }}
           >
             <Github className="w-6 h-6" />
           </a>
