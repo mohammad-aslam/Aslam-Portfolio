@@ -42,13 +42,7 @@ export default function ProjectsSection() {
               key={index}
               className="bg-slate-850 border-slate-700 hover:border-indigo-500/50 transition-all hover:shadow-lg hover:shadow-indigo-500/10 group overflow-hidden"
             >
-              <div className="relative overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
+
               
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
@@ -66,20 +60,14 @@ export default function ProjectsSection() {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <Button 
-                    variant="ghost" 
-                    size="sm"
-                    className="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors text-sm p-0"
+                  <a 
+                    href="https://github.com/mohammad-aslam" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors text-sm"
                   >
                     <Github className="w-4 h-4 mr-1" /> Code
-                  </Button>
-                  <Button 
-                    variant="ghost" 
-                    size="sm"
-                    className="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors text-sm p-0"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-1" /> Live
-                  </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>

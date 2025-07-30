@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
+import profileImage from "@assets/WhatsApp Image 2025-07-30 at 14.54.51_f5354f6d_1753895093724.jpg";
 
 export default function HeroSection() {
   const scrollToWork = () => {
@@ -16,9 +17,11 @@ export default function HeroSection() {
     <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20">
       <div className="text-center max-w-4xl mx-auto">
         <div className="mb-8">
-          <div className="w-32 h-32 rounded-full mx-auto border-4 border-indigo-500/30 shadow-lg shadow-indigo-500/20 bg-slate-700 flex items-center justify-center">
-            <span className="text-4xl font-bold text-slate-300">PM</span>
-          </div>
+          <img 
+            src={profileImage} 
+            alt="Peddinti Mohammad - Professional Photo" 
+            className="w-32 h-32 rounded-full mx-auto border-4 border-indigo-500/30 shadow-lg shadow-indigo-500/20 object-cover"
+          />
         </div>
         
         <h1 className="text-5xl md:text-6xl font-bold mb-4">

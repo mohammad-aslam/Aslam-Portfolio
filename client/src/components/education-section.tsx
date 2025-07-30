@@ -65,7 +65,7 @@ export default function EducationSection() {
           </span>
         </h2>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Education Column */}
           <div>
             <div className="flex items-center mb-8">
@@ -73,24 +73,24 @@ export default function EducationSection() {
               <h3 className="text-2xl font-semibold">Education</h3>
             </div>
             
-            <div className="space-y-6">
+            <div className="space-y-8">
               {education.map((edu, index) => (
-                <Card key={index} className="bg-slate-850 border-slate-700">
-                  <CardContent className="p-6">
-                    <div className="flex justify-between items-start mb-2">
-                      <h4 className="text-lg font-semibold">{edu.degree}</h4>
-                      <Badge className={`${edu.statusColor} text-white text-xs`}>
+                <Card key={index} className="bg-slate-850 border-slate-700 hover:border-indigo-500/50 transition-all">
+                  <CardContent className="p-8">
+                    <div className="flex justify-between items-start mb-4">
+                      <h4 className="text-xl font-semibold text-slate-100">{edu.degree}</h4>
+                      <Badge className={`${edu.statusColor} text-white text-sm px-3 py-1`}>
                         {edu.status}
                       </Badge>
                     </div>
-                    <p className="text-slate-400 mb-2">{edu.institution}</p>
-                    <p className="text-slate-500 text-sm mb-3">
+                    <p className="text-slate-300 mb-3 text-lg">{edu.institution}</p>
+                    <p className="text-slate-400 text-base mb-4 flex items-center">
                       📅 {edu.period}
                     </p>
                     {edu.grade && (
                       <div className="flex items-center">
-                        <span className="text-slate-400 text-sm mr-4">Grade: </span>
-                        <Badge variant="secondary" className="bg-green-100 text-green-800">
+                        <span className="text-slate-400 text-base mr-4">Grade: </span>
+                        <Badge variant="secondary" className="bg-green-500/20 text-green-400 border border-green-500/30 px-3 py-1">
                           {edu.grade}
                         </Badge>
                       </div>
@@ -108,17 +108,17 @@ export default function EducationSection() {
               <h3 className="text-2xl font-semibold">Certifications</h3>
             </div>
             
-            <div className="space-y-6">
+            <div className="space-y-8">
               {certifications.map((cert, index) => (
-                <Card key={index} className="bg-slate-850 border-slate-700">
-                  <CardContent className="p-6">
-                    <div className="flex justify-between items-start mb-2">
-                      <h4 className="text-lg font-semibold">{cert.name}</h4>
-                      <Badge className={`${cert.typeColor} text-white text-xs`}>
+                <Card key={index} className="bg-slate-850 border-slate-700 hover:border-violet-500/50 transition-all">
+                  <CardContent className="p-8">
+                    <div className="flex justify-between items-start mb-4">
+                      <h4 className="text-xl font-semibold text-slate-100">{cert.name}</h4>
+                      <Badge className={`${cert.typeColor} text-white text-sm px-3 py-1`}>
                         {cert.type}
                       </Badge>
                     </div>
-                    <p className="text-slate-400 text-sm">{cert.description}</p>
+                    <p className="text-slate-300 text-base leading-relaxed">{cert.description}</p>
                   </CardContent>
                 </Card>
               ))}
