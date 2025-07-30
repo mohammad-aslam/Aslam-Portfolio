@@ -61,7 +61,7 @@ export default function ProjectsSection() {
                 </div>
                 <div className="flex gap-3">
                   <a 
-                    href="https://github.com/mohammad-aslam" 
+                    href="https://github.com/peddinti-mohammad" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors text-sm"

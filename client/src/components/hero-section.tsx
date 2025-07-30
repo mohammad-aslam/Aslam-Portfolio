@@ -57,7 +57,7 @@ export default function HeroSection() {
         
         <div className="flex justify-center gap-4 mb-8">
           <a 
-            href="https://linkedin.com/in/mohammad-aslam" 
+            href="https://www.linkedin.com/in/peddinti-mohammad" 
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-400 hover:text-indigo-400 transition-colors"
@@ -66,7 +66,7 @@ export default function HeroSection() {
             <Linkedin className="w-6 h-6" />
           </a>
           <a 
-            href="https://github.com/mohammad-aslam" 
+            href="https://github.com/peddinti-mohammad" 
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-400 hover:text-indigo-400 transition-colors"

@@ -25,7 +25,7 @@ export default function ContactSection() {
     {
       icon: <Github className="text-green-400 text-xl" />,
       title: "GitHub",
-      value: "mohammad-aslam",
+      value: "peddinti-mohammad",
       bgColor: "bg-green-500/20",
     },
   ];
@@ -70,7 +70,7 @@ export default function ContactSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:mohammadalam62819@gmail.com?subject=Portfolio Contact&body=Hi Peddinti Mohammad,%0D%0A%0D%0AI found your portfolio and would like to get in touch regarding..."
+                href="mailto:mohammadalam62819@gmail.com?subject=Portfolio%20Contact%20-%20Opportunity%20Discussion&body=Hi%20Peddinti%20Mohammad,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20I'm%20impressed%20with%20your%20work.%20I%20would%20like%20to%20discuss%20a%20potential%20opportunity%20with%20you.%0D%0A%0D%0APlease%20let%20me%20know%20when%20would%20be%20a%20good%20time%20to%20connect.%0D%0A%0D%0ABest%20regards"
                 className="inline-block"
               >
                 <Button className="bg-gradient-to-r from-indigo-500 to-violet-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-indigo-600 hover:to-violet-600 transition-all transform hover:scale-105 shadow-lg shadow-indigo-500/25">
@@ -79,7 +79,7 @@ export default function ContactSection() {
                 </Button>
               </a>
               <a
-                href="www.linkedin.com/in/peddinti-mohammad-571315259"
+                href="https://www.linkedin.com/in/peddinti-mohammad-571315259"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
@@ -93,7 +93,7 @@ export default function ContactSection() {
                 </Button>
               </a>
               <a
-                href="https://github.com/mohammad-aslam"
+                href="https://github.com/peddinti-mohammad"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
