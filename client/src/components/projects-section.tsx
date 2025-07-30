@@ -78,7 +78,7 @@ export default function ProjectsSection() {
                     size="sm"
                     className="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors text-sm p-0"
                   >
-                    <ExternalLink className="w-4 h-4 mr-1" /> Code
+                    <ExternalLink className="w-4 h-4 mr-1" /> Live
                   </Button>
                 </div>
               </CardContent>

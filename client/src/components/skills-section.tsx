@@ -5,7 +5,8 @@ import {
   BarChart3, 
   Database, 
   Wrench, 
-  Users 
+  Users,
+  GitBranch
 } from "lucide-react";
 
 export default function SkillsSection() {
@@ -16,7 +17,17 @@ export default function SkillsSection() {
       skills: ["C", "Python", "Java"]
     },
     {
-      title: "Web Development", 
+      title: "Databases",
+      icon: <Database className="text-green-400 text-xl" />,
+      skills: ["SQL", "SQLite", "MySQL", "Excel"]
+    },
+    {
+      title: "Version Control",
+      icon: <GitBranch className="text-blue-400 text-xl" />,
+      skills: ["Git", "GitHub", "Git Bash"]
+    },
+    {
+      title: "Web Development",
       icon: <Globe className="text-blue-400 text-xl" />,
       skills: ["HTML", "CSS", "JavaScript", "Flask"]
     },
@@ -24,11 +35,6 @@ export default function SkillsSection() {
       title: "Data Visualization",
       icon: <BarChart3 className="text-violet-400 text-xl" />,
       skills: ["Power BI", "Matplotlib", "Seaborn"]
-    },
-    {
-      title: "Databases",
-      icon: <Database className="text-green-400 text-xl" />,
-      skills: ["SQL", "SQLite", "MySQL", "Excel"]
     },
     {
       title: "IDEs",
@@ -39,6 +45,11 @@ export default function SkillsSection() {
       title: "Problem Solving",
       icon: <Users className="text-pink-400 text-xl" />,
       skills: ["DSA", "Debugging", "Logic"]
+    },
+    {
+      title: "Soft Skills",
+      icon: <Users className="text-pink-400 text-xl" />,
+      skills: ["Teamwork", "Communication", "Task Prioritization"]
     }
   ];
 
@@ -51,7 +62,7 @@ export default function SkillsSection() {
           </span>
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillCategories.map((category, index) => (
             <Card 
               key={index}

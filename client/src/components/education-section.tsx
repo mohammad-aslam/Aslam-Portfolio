@@ -22,7 +22,7 @@ export default function EducationSection() {
     {
       degree: "Secondary School (BSEAP)",
       institution: "Golden Bells E.M High School, Anantapur",
-      period: "2018 - 2020",
+      period: "2010 - 2020",
       status: "Completed", 
       statusColor: "bg-green-500",
       grade: "92.6%"

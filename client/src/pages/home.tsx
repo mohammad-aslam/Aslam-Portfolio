@@ -19,7 +19,7 @@ export default function Home() {
       <footer className="py-8 px-6 border-t border-slate-800">
         <div className="container mx-auto text-center">
           <p className="text-slate-400">
-            © 2024 Peddinti Mohammad. All rights reserved.
+            © 2025 Peddinti Mohammad. All rights reserved.
           </p>
           <p className="text-slate-500 text-sm mt-2">
             Built with passion using modern web technologies
